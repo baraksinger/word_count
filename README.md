@@ -14,6 +14,7 @@ wordLookup (string)
 usage: 
 
 from cmd line: 
+
 node wordCount [url|file|string]
 
 node wordLookup [string]
