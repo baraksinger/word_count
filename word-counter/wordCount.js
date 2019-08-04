@@ -76,7 +76,7 @@ function updateWordMap(text, table){
 
     // Increment the count for a word
     for(let w of allWords){
-        if(!/^[0-9]*$/.test(w) && w !== '') {
+        if(!/^[0-9]*$/.test(w)) {
             !table[w]? table[w] = 1 : table[w]++;
         }
     }
