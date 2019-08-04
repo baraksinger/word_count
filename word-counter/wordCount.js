@@ -72,7 +72,7 @@ function updateWordMap(text, table){
     }
 
     // Split up the text case insensitive with regex matching all non word characters except '
-    let allWords = text.toLowerCase().split(/(?![/'])\W+/g);
+    let allWords = text.toLowerCase().split(/(?!['])\W+/g);
 
     // Increment the count for a word
     for(let w of allWords){
