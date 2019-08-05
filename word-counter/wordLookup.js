@@ -5,7 +5,7 @@ if (process.argv.length <= 2) {
     process.exit(-1);
 }
 
-let lookupWord = process.argv[2];
+let lookupWord = process.argv[2].toLowerCase();
 
 // load the table from the ./wordMap.json
 let table = loadWordMap();
@@ -15,7 +15,7 @@ if(!table){
 }
 
 // Get the count for a word
-return getCount(lookupWord);
+return getCount();
 
 function loadWordMap(){
     if (fs.existsSync('./wordMap.json')){
